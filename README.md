@@ -22,34 +22,34 @@ All data units match your control setup. If you run in imperial, use inches. If 
 
 General machine specific settings. 
 
-## #111, #112
+#### #111, #112
 You must change values for #111, #112 to match your machine units. 
 	- 4000 mm/min and 500 mm/min are good for metric machines. 
 	- 150 inch/min and 20 inch/min are good for imperial machines.
 
 You must set #115 to match your gauge tool length, again respecting your machine units
 
-## #113 - Back off distance for second touch
+#### #113 - Back off distance for second touch
 The faster you feed, the larger you need to back off for the second touch.
 This one needs to be changed to match machine units.
 Reasonable defaults are: 
  	- 2mm 
  	- 0.08inch
 
-## #115 - Calibration Tool Gauge Length 
+#### #115 - Calibration Tool Gauge Length 
 Set to match your tool, in your machine units
 
-## #116 - Tool Breakage Saftey Distance Above Setter
+#### #116 - Tool Breakage Saftey Distance Above Setter
 Height above tool setter that you will rapid to before seeing for tool breakage detection
 
-## #117 - Tool Offset Direction
+#### #117 - Tool Offset Direction
 set based on the location of your tool setter and the direction you want the tool to offset when a diameter is given. Most common choices are: 
 	- Back Left (Tool shifts toward X+): 0
 	- Back Right (Tool shifts toward X-): 180
 
 But any angle is technically allowable. 
 
-## 118 - Reference Tool Setter Seek Height 
+#### 118 - Reference Tool Setter Seek Height 
 
 This is a round numver large enough to seek the tool setter, but not too large to exceed z stroke. 
 
@@ -57,12 +57,10 @@ Change to match your units, and account for your column height.
 
 Typical machines have 300mm stroke, so 280 is fine. For imperial machines set to 11 inches. Some newer speedios have a large Z stroke of 380mm
 
-## #119 Calibration Tool Number
+#### #119 Calibration Tool Number
  
 Calibration Tool number to be used. Be sure to put your calibration tool in this pocket when doing calibration
 
-
-```
 
 ### 8503 -- Tool Data File
 Find the section matching your tool number and input the number of inserts, diameter, and orientation. 
