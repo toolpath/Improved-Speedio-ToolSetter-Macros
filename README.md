@@ -1,6 +1,6 @@
 # Improved Speedio Toolsetter Macros
 
-Originally written by Alex Rosner of (Wisconsin CAM Solutions)[https://www.instagram.com/wisconsin_cam/], with minor modifications and documentation written by Justin Gray of Toolpath Labs
+Originally written by Alex Rosner of [Wisconsin CAM Solutions](https://www.instagram.com/wisconsin_cam), with minor modifications and documentation written by Justin Gray of Toolpath Labs
 
 These macros have been written to assume that Tool number and Pot number match (i.e. Tool 1 is in pocket 1)
 
