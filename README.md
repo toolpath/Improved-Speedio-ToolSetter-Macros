@@ -49,7 +49,7 @@ set based on the location of your tool setter and the direction you want the too
 
 But any angle is technically allowable. 
 
-#### 118 - Reference Tool Setter Seek Height 
+#### #118 - Reference Tool Setter Seek Height 
 
 This is a round numver large enough to seek the tool setter, but not too large to exceed z stroke. 
 
