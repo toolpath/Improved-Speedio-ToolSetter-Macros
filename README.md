@@ -8,7 +8,9 @@ If you are using arbitrary tool numbers, then these will not work for you.
 
 
 ## Installtion 
-Copy these macros into your speedio control and run them. 
+
+1) Copy these macros into your speedio control and run them. 
+2) Remove any offset values 54.1P48. The macros assume this extended work offset matches the G53 (for stupid control reasons this works better than actually using G53)
 
 
 ## Tool Data Entry 
@@ -68,3 +70,9 @@ The `E` argument sets the tolerance for the length check. Any discrepancy above 
 
 Note: this macro can not be used on tools that have a given diameter in the tool data file (`O8503`). It will safely error if called with those tools, but to avoid error do not enable break check on these tools. 
 
+
+
+## TODO 
+
+[ ] Explicit error check if G54.1 P48 is non-zero
+[ ] Allow Breakcheck on tools with diameter and inserts
