@@ -107,7 +107,8 @@ Run program `O8500.NC`, controled by going to the N# matching the tool number yo
 
 This is meant to be used a subprogram, called like `G65 P8505 E0.005`
 
-The `E` argument sets the tolerance for the length check. Any discrepancy above the E value will throw an error. 
+The `E` argument sets the tolerance for the length check. Any discrepancy above the E value will throw an error.
+Recommended to alias a custom M code to O8505 so break check can be used from a directory other than where the setter programs are located. 
 
 
 Note: this macro can not be used on tools that have a given diameter in the tool data file (`O8503`). It will safely error if called with those tools, but to avoid error do not enable break check on these tools. 
