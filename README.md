@@ -131,3 +131,4 @@ Note: this macro can not be used on tools that have a given diameter in the tool
 - [ ] Allow Breakcheck on tools with diameter and inserts
 - [ ] Improve settings file to pull default feed rates based on machine units
 - [ ] Account for primary offset angle (#117) in tool setting angle values to make tool data independent of tool setter location
+- [ ] Modify macros to save current values of G54.1P48 to system variables first, set to 0 for tool setting stuff, then retrieve and reset offset after complete. 
