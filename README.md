@@ -7,10 +7,10 @@ These macros have been written to assume that Tool number and Pot number match (
 If you are using arbitrary tool numbers, then these will not work for you. 
 
 
-## Installtion 
+## Installation 
 
 1) Copy these macros into your speedio control and run them. 
-2) Remove any offset values 54.1P48. The macros assume this extended work offset matches the G53 (for stupid control reasons this works better than actually using G53)
+2) Set all offsets in 54.1P48 to 0. The macros assume this extended work offset matches the G53 (for stupid control reasons this works better than actually using G53)
 
 
 ## Tool Data Entry 
@@ -51,7 +51,7 @@ But any angle is technically allowable.
 
 #### #118 - Reference Tool Setter Seek Height 
 
-This is a round numver large enough to seek the tool setter, but not too large to exceed z stroke. 
+This is a round number large enough to seek the tool setter, but not too large to exceed z stroke. 
 
 Change to match your units, and account for your column height. 
 
@@ -117,7 +117,7 @@ Note: this macro can not be used on tools that have a given diameter in the tool
 
 ## TODO 
 
-[ ] Explicit error check if G54.1 P48 is non-zero
-[ ] Allow Breakcheck on tools with diameter and inserts
-[ ] Improve settings file to pull default feed rates based on machine units
-[ ] Account for primary offset angle (#117) in tool setting angle values to make tool data independent of tool setter location
+- [ ] Explicit error check if G54.1 P48 is non-zero
+- [ ] Allow Breakcheck on tools with diameter and inserts
+- [ ] Improve settings file to pull default feed rates based on machine units
+- [ ] Account for primary offset angle (#117) in tool setting angle values to make tool data independent of tool setter location
