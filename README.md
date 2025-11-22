@@ -12,9 +12,19 @@ If you are using arbitrary tool numbers, then these will not work for you.
 1) Copy these macros into your speedio control and run them. 
 2) Set all offsets in 54.1P48 to 0. The macros assume this extended work offset matches the G53 (for stupid control reasons this works better than actually using G53)
 
+## General Usage 
+
+Before using these macros, you should edit programs `O8502.NC` and `O8503.NC` to match the units and specifics of your machine. See notes below for details. 
+
+You are only supposed to call two programs directly: 
+- `O8500.NC` - The main tool setting program 
+- `O8504.NC` - The tool setter calibration program
+
+All other programs are internal subroutines called from those two. 
+
 
 ## Tool Data Entry 
-Before using these macros, you should edit programs `O8502.NC`, and `O8503.NC` 
+
 
 All data units match your control setup. If you run in imperial, use inches. If you run in metric use mm.
 
