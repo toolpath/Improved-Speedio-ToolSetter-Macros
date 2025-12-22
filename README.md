@@ -14,11 +14,11 @@ If you are using arbitrary tool numbers, then these will not work for you.
 
 ## General Usage 
 
-Before using these macros, you should edit programs `O8502.NC` and `O8503.NC` to match the units and specifics of your machine. See notes below for details. 
+Before using these macros, you should edit programs `O6502.NC` and `O6503.NC` to match the units and specifics of your machine. See notes below for details. 
 
 You are only supposed to call two programs directly: 
-- `O8500.NC` - The main tool setting program 
-- `O8504.NC` - The tool setter calibration program
+- `O6500.NC` - The main tool setting program 
+- `O6504.NC` - The tool setter calibration program
 
 All other programs are internal subroutines called from those two. 
 
@@ -94,34 +94,34 @@ N18
 ```
 
 
-## Tool Setter Calibration - O8504
+## Tool Setter Calibration - O6504
 
 1) Position gauge tool at the XY location of the toolsetter 
 2) Z height can be any level above the tool setter, as long as its not triggered 
-3) call program `O8504.NC`
+3) call program `O6504.NC`
 
 
-## Single Tool Setting - O8500
+## Single Tool Setting - O6500
 
-Run program `O8500.NC`, controled by going to the N# matching the tool number you want to touch off
+Run program `O6500.NC`, controled by going to the N# matching the tool number you want to touch off
 
 ## Multiple Tool Setting
 
-1) Edit O8500.NC, lines 4 and 5 to set min and max tool number
-2) Run program `O8500.NC`, cycle start from the top of the file
+1) Edit O6500.NC, lines 4 and 5 to set min and max tool number
+2) Run program `O6500.NC`, cycle start from the top of the file
 
 
 
 
-## Tool Breakage Detection - O8505
+## Tool Breakage Detection - O6505
 
 This is meant to be used a subprogram, called like `G65 P8505 E0.005`
 
 The `E` argument sets the tolerance for the length check. Any discrepancy above the E value will throw an error.
-Recommended to alias a custom M code to O8505 so break check can be used from a directory other than where the setter programs are located. 
+Recommended to alias a custom M code to O6505 so break check can be used from a directory other than where the setter programs are located. 
 
 
-Note: this macro can not be used on tools that have a given diameter in the tool data file (`O8503`). It will safely error if called with those tools, but to avoid error do not enable break check on these tools. 
+Note: this macro can not be used on tools that have a given diameter in the tool data file (`O6503`). It will safely error if called with those tools, but to avoid error do not enable break check on these tools. 
 
 
 
